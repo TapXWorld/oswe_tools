@@ -1,2 +1,37 @@
 # oswe_tools
-for offensive security OSWE certification.
+🔑 我的建议学习路线（无 Lab 版本）
+
+# 第一步：通读教材/视频（1~2 周）
+```
+目的：先知道 OSWE 考什么，涉及哪些漏洞类别。
+建议方式：
+第一遍快速看，不用深钻代码，先把漏洞类型和 exploit 流程记下来。
+做笔记：每个章节对应的「漏洞类型 + 利用链模式 + 脚本结构」。
+👉 输出结果：一份 漏洞思维导图（比如 SQLi → auth bypass → file upload → RCE）。
+```
+
+# 第二步：HTB / VulnHub 靶机替代 Lab（2~3 个月）
+```
+按教材知识点 → 找对应 HTB 靶机来练习。
+重点是 写自动化脚本，完全模拟考试环境。
+对照关系（举例）：
+教材考点	推荐 HTB 靶机	练习目标
+SQLi + 文件上传	Magic, Mango	SQLi 审计 + 上传绕过 → 一键化脚本
+Auth bypass / JWT	Smasher2, Tenet	登录绕过 + token 伪造
+命令注入	Obscurity, Sense	白盒找到过滤逻辑 → 命令执行
+反序列化漏洞	Json (.NET), Jerry	审计 gadget → 拼 exploit
+多步骤逻辑链	Breadcrumbs, Teacher	漏洞链串接 → 一键化利用
+```
+
+👉 输出结果：每台靶机一个 exploit.py 脚本，能一键拿到 shell。
+
+# 第三步：模拟 OSWE 考试（11 月）
+```
+自己从 HTB 中挑 2 台机器（难度中等+稍高），设定 48 小时限时：
+先读源码 → 定位漏洞 → 写 PoC → 写全自动化 exploit。
+模拟考试要求：
+必须写成一键脚本（不能手工点命令）。
+必须写成一份报告（截图、漏洞解释、修复建议）。
+```
+
+👉 输出结果：至少完成 2 次模拟 48h 考试。
