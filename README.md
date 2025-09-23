@@ -21,15 +21,14 @@
 按教材知识点 → 找对应 HTB 靶机来练习。
 重点是 写自动化脚本，完全模拟考试环境。
 对照关系（举例）：
-教材考点	推荐 HTB 靶机	练习目标
-SQLi + 文件上传	Magic, Mango	SQLi 审计 + 上传绕过 → 一键化脚本
-Auth bypass / JWT	Smasher2, Tenet	登录绕过 + token 伪造
-命令注入	Obscurity, Sense	白盒找到过滤逻辑 → 命令执行
-反序列化漏洞	Json (.NET), Jerry	审计 gadget → 拼 exploit
-多步骤逻辑链	Breadcrumbs, Teacher	漏洞链串接 → 一键化利用
-```
-
+教材考点  推荐 HTB 靶机  练习目标
+SQLi + 文件上传  Magic, Mango  SQLi 审计 + 上传绕过 → 一键化脚本
+Auth bypass / JWT  Smasher2, Tenet  登录绕过 + token 伪造
+命令注入  Obscurity, Sense  白盒找到过滤逻辑 → 命令执行
+反序列化漏洞  Json (.NET), Jerry  审计 gadget → 拼 exploit
+多步骤逻辑链  Breadcrumbs, Teacher  漏洞链串接 → 一键化利用
 👉 输出结果：每台靶机一个 exploit.py 脚本，能一键拿到 shell。
+```
 
 # 第三步：模拟 OSWE 考试（11 月）
 ```
@@ -38,6 +37,11 @@ Auth bypass / JWT	Smasher2, Tenet	登录绕过 + token 伪造
 模拟考试要求：
 必须写成一键脚本（不能手工点命令）。
 必须写成一份报告（截图、漏洞解释、修复建议）。
+👉 输出结果：至少完成 2 次模拟 48h 考试。
 ```
 
-👉 输出结果：至少完成 2 次模拟 48h 考试。
+# 第四步：等报 OSWE 时
+```
+你已经有完整 exploit 脚本的经验了，Lab 会变成「熟悉考试套路」而不是「学漏洞」。
+等于你提前完成了 70% 的准备。
+```
